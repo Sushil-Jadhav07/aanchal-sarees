@@ -1,0 +1,228 @@
+[
+  {
+    "path": "/assets/models/ruby.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 930210,
+      "partialAlphaPixels": 642654
+    }
+  },
+  {
+    "path": "/assets/models/emerald.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 932045,
+      "partialAlphaPixels": 640819
+    }
+  },
+  {
+    "path": "/assets/models/magenta.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 889777,
+      "partialAlphaPixels": 683087
+    }
+  },
+  {
+    "path": "/assets/models/mustard.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 923087,
+      "partialAlphaPixels": 649777
+    }
+  },
+  {
+    "path": "/assets/models/purple.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 907814,
+      "partialAlphaPixels": 665050
+    }
+  },
+  {
+    "path": "/assets/models/blue.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 893907,
+      "partialAlphaPixels": 678957
+    }
+  },
+  {
+    "path": "/assets/models/orange.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "fullyTransparentPixels": 905475,
+      "partialAlphaPixels": 667389
+    }
+  },
+  {
+    "path": "/assets/backgrounds/showroom-empty.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/backgrounds/showroom-models.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/backgrounds/showroom-seated.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/backgrounds/ivory-paper.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/backgrounds/wine-brocade.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/fabrics/emerald.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/fabrics/ruby.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/fabrics/purple.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/fabrics/mustard.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/fabrics/blue.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/craft/loom.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/craft/hands.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": null
+  },
+  {
+    "path": "/assets/elements/wine-ribbon.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 255,
+      "fullyTransparentPixels": 1201516,
+      "partialAlphaPixels": 370174
+    }
+  },
+  {
+    "path": "/assets/elements/gold-paisley-corner.png",
+    "width": 1312,
+    "height": 1199,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 255,
+      "fullyTransparentPixels": 1186765,
+      "partialAlphaPixels": 386322
+    }
+  },
+  {
+    "path": "/assets/elements/saree-rail.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "origin": "AI-generated matching recreation; not extracted original layer",
+    "alpha": {
+      "min": 0,
+      "max": 255,
+      "fullyTransparentPixels": 351805,
+      "partialAlphaPixels": 1220226
+    }
+  }
+]

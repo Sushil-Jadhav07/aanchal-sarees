@@ -1,0 +1,264 @@
+/* Section 12. Desktop sizes come from the 1832 x 859 reference; there 1 reference px = 0.05459cqw. */
+.ar-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-cream);
+  font-family: 'Newsreader Variable', var(--font-serif);
+}
+.ar-stage {
+  padding-block: 4rem;
+}
+.ar-title {
+  padding-inline: 1.25rem;
+  text-align: center;
+  font-size: min(2.6rem, 10vw);
+  font-weight: 600;
+  font-variation-settings: 'opsz' 60;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #6f0b27;
+}
+.ar-title em {
+  font-weight: 600;
+  color: #9c6a1a;
+}
+.ar-group {
+  position: relative;
+  isolation: isolate;
+  margin-top: 1.75rem;
+}
+.ar-row {
+  position: relative;
+  width: 100%;
+  cursor: grab;
+}
+.ar-row:active {
+  cursor: grabbing;
+}
+.ar-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 12px rgba(122, 76, 20, 0.16));
+}
+.ar-clip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #5b2a14;
+  pointer-events: auto;
+}
+.ar-clip img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+.ar-haze {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #fdf6ec, #f7eadb);
+}
+.ar-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.ar-arrow {
+  position: absolute;
+  top: calc(50% - 1.4rem);
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid #7a1230;
+  border-radius: 999px;
+  background: rgba(250, 243, 233, 0.82);
+  color: #6f0b27;
+  cursor: pointer;
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+}
+.ar-arrow:hover {
+  background: #6f0b27;
+  color: var(--color-cream);
+}
+.ar-arrow svg {
+  width: 52%;
+  height: 52%;
+}
+.ar-prev {
+  left: 0.75rem;
+}
+.ar-next {
+  right: 0.75rem;
+}
+.ar-foot {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  padding-inline: 1.25rem;
+  text-align: center;
+}
+.ar-name {
+  font-size: min(2.1rem, 7.6vw);
+  font-weight: 600;
+  font-variation-settings: 'opsz' 40;
+  line-height: 1.15;
+  color: #211713;
+}
+.ar-kind {
+  margin-top: 0.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #211713;
+}
+.ar-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+.ar-dots button {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2.75rem;
+  cursor: pointer;
+}
+.ar-dots span {
+  display: block;
+  flex: none;
+  width: 0.78rem;
+  height: 0.78rem;
+  border: 1.5px solid #7a1230;
+  border-radius: 999px;
+  transition:
+    width 0.25s,
+    height 0.25s,
+    background-color 0.25s;
+}
+.ar-dots button[aria-current='true'] span {
+  width: 0.95rem;
+  height: 0.95rem;
+  background: #7a1230;
+}
+.ar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  min-width: 15rem;
+  min-height: 3.4rem;
+  margin-top: 0.75rem;
+  padding-inline: 2rem;
+  border-radius: 999px;
+  background: #740d29;
+  font-size: 1.3rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #fdf4ec;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.ar-cta:hover {
+  background: #4f0619;
+}
+
+/* ---- desktop: positions measured from the reference --------------------------------------------- */
+@media (min-width: 1024px) {
+  .ar-stage {
+    position: relative;
+    container-type: inline-size;
+    aspect-ratio: 1832 / 859;
+    /* as wide as the screen, but never taller than the window below the header */
+    width: min(100%, max(1000px, calc((100svh - 4rem) * 2.1327)));
+    margin-inline: auto;
+    padding: 0;
+  }
+  .ar-title {
+    position: absolute;
+    inset-inline: 0;
+    top: 2.55cqw;
+    padding: 0;
+    font-size: 3.96cqw;
+    white-space: nowrap;
+  }
+  .ar-group {
+    position: absolute;
+    inset-inline: 0;
+    top: 6.823cqw; /* 125 ref px */
+    margin: 0;
+  }
+  .ar-arrow {
+    top: calc(16.21cqw - 1.75cqw);
+    width: 3.5cqw;
+    height: 3.5cqw;
+    border-width: max(1px, 0.08cqw);
+  }
+  .ar-prev {
+    left: 2.3cqw;
+  }
+  .ar-next {
+    right: 2.3cqw;
+  }
+  .ar-foot {
+    position: absolute;
+    inset-inline: 0;
+    top: 33.15cqw;
+    margin: 0;
+    padding: 0;
+  }
+  .ar-name {
+    font-size: 2.5cqw;
+    line-height: 1.12;
+  }
+  .ar-kind {
+    margin-top: 0.2cqw;
+    font-size: max(10px, 0.98cqw);
+    line-height: 1.5;
+  }
+  .ar-dots {
+    margin-top: 0.5cqw;
+  }
+  .ar-dots button {
+    width: 2.02cqw;
+    height: 2.2cqw;
+    min-width: 20px;
+    min-height: 26px;
+  }
+  .ar-dots span {
+    width: 0.82cqw;
+    height: 0.82cqw;
+  }
+  .ar-dots button[aria-current='true'] span {
+    width: 0.98cqw;
+    height: 0.98cqw;
+  }
+  .ar-cta {
+    gap: 0.9cqw;
+    min-width: 19.2cqw;
+    height: 3.5cqw;
+    min-height: 40px;
+    margin-top: 0.65cqw;
+    padding-inline: 1.6cqw;
+    font-size: max(14px, 1.5cqw);
+  }
+  .ar-cta svg {
+    width: 1.7cqw;
+    height: 1.7cqw;
+  }
+}

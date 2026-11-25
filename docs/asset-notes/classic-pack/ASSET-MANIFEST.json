@@ -1,0 +1,446 @@
+[
+  {
+    "file": "01-six-moods/frame-only-transparent.png",
+    "role": "Reusable empty gold arch: transparent window and outside",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "centerAlpha": 0,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "c47e37d4d63b1c7220268867148ee69cd9e334965e8351ab009691da3ada75bc"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/01-classic-mustard.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "8d4dd1ee9370d965738c66e5c20c0d9c37b7b5a20c6ba45183913efe5a2fcb94"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/02-regal-purple.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "85a1a9d4c0cc93876cab64f2f3ac70f073ec28bf3f836c600bda66391b013634"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/03-festive-emerald.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "1e1b1f97fe19f5b3abe220e718a126b838f9fbb51eab8756e9ca65699250223a"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/04-romantic-magenta.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "a8737173dff499ce115d760fa888cf189f525f1e8908703b48e7e12bcba2ba2f"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/05-artisan-orange.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "856d3c50dae1ce8c71bdf10ea7dae22d7daeae51f75d255e0fbed4840db126f4"
+  },
+  {
+    "file": "01-six-moods/photos-with-background/06-contemporary-blue.png",
+    "role": "Individual seated portrait with photographic background; no frame/text",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "ba26e6b7fbecb1d70a4a3883dc3ff402de8ca392a1fd8e7b5df66bfe14fee303"
+  },
+  {
+    "file": "02-signature-drape/models-transparent/01-emerald-model.png",
+    "role": "Transparent model, no hotspots or UI",
+    "width": 887,
+    "height": 1774,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "centerAlpha": 253,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "febacc6291c79bea248f5b29798d7109661ca3211a394f1edfb4cc4f840b7e1a"
+  },
+  {
+    "file": "02-signature-drape/models-transparent/02-magenta-model.png",
+    "role": "Transparent model, no hotspots or UI",
+    "width": 887,
+    "height": 1774,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "centerAlpha": 253,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "1d42b721147806ab0951cb387ca754ed27d4d0ca762918b9b6972aea78226a14"
+  },
+  {
+    "file": "03-curved-weave-fan/photos-with-background/01-banarasi-ochre.png",
+    "role": "Flat rectangular panel photo with background; add titles/curve in code",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "96d3bb14334caaa0041d5c479fdb6a99626febda28e5318623aa0668659c4c73"
+  },
+  {
+    "file": "03-curved-weave-fan/photos-with-background/02-kanjivaram-plum.png",
+    "role": "Flat rectangular panel photo with background; add titles/curve in code",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "b7d2f87f88b77b8049485f1bb182c04ac69dd88704f6e26b6c89b50055383e74"
+  },
+  {
+    "file": "03-curved-weave-fan/photos-with-background/03-paithani-emerald.png",
+    "role": "Flat rectangular panel photo with background; add titles/curve in code",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "75b11c3789aa5ceda66c6ae8850248acc650bc7d28fd3ae0ac0e90eff293aedf"
+  },
+  {
+    "file": "03-curved-weave-fan/photos-with-background/04-chanderi-coral.png",
+    "role": "Flat rectangular panel photo with background; add titles/curve in code",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "d7263a59e760b0c4ce64ca0c9e17ff743079d5d135faa944f4bf3764612bd376"
+  },
+  {
+    "file": "04-worn-beautifully/photos-with-background/01-mothers-heirloom.png",
+    "role": "Individual story portrait with background; no captions/frame/play icon",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "ea1ee96ab7bae9151acb7bad396f9b5e79eaa892dd0e2ba2d4024c766959ba3d"
+  },
+  {
+    "file": "04-worn-beautifully/photos-with-background/02-festive-return.png",
+    "role": "Individual story portrait with background; no captions/frame/play icon",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "d13788e5e86992c369a39324e2657f1e2473ce1ee7e3fa65b4ddbc823143c0cb"
+  },
+  {
+    "file": "04-worn-beautifully/photos-with-background/03-bridal-noolam.png",
+    "role": "Individual story portrait with background; no captions/frame/play icon",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "b17c51b16f69ec3c19d1b8e75914bedbbf56886c8147f9d7c86f2f4b220f4628"
+  },
+  {
+    "file": "04-worn-beautifully/photos-with-background/04-draped-for-diwali.png",
+    "role": "Individual story portrait with background; no captions/frame/play icon",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "0fb5bec86fab1e81f61f5fa190044721b333520e378ba54abea5fd7149540aa1"
+  },
+  {
+    "file": "04-worn-beautifully/photos-with-background/05-every-chapter.png",
+    "role": "Individual story portrait with background; no captions/frame/play icon",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "a6518c8c23b7e6451e38443cf221aad94561a5d0caadf97c819cd778591cd906"
+  },
+  {
+    "file": "05-bridal-arches/frame-only-transparent.png",
+    "role": "Reusable empty bridal arch: transparent window and outside",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "centerAlpha": 0,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "a1d1ed3550f52789df5005efc68e357d5cb4b3e95dbe1802bf54d0416a26c2e9"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/01-far-left-violet.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "6096d524d175d15d2d31d5280ca6d244ff3aaeca913f3b56b7a3dc9900f02b11"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/02-left-emerald.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "c615e509d415f077d5e2df7547e000eae88ee6cc99692156cdeda8a33f74748c"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/03-left-pink.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "8c3fc40560df72dd6fe010b325a46a44748c5e7526d6efb2cf4c86720c6ed733"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/04-centre-crimson-bride.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "fb7805e975051ccc17d31738c84e48896b0389d793fb568a65759576905f7def"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/05-right-emerald.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "f96e6925dcfa3576cd6e4eb78e07e97627dfa3349a50438810e6b2d41de12812"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/06-right-violet.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "ef29a64e6fea208628dbd136beb3e922c561ac67672dcee097e13330aa6c6642"
+  },
+  {
+    "file": "05-bridal-arches/photos-with-background/07-far-right-mauve.png",
+    "role": "Individual full-colour bridal photo; fade/scale in code, not baked in",
+    "width": 1086,
+    "height": 1448,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "58a84f98e90d66aaddeeb8a312ab23f599973418ff89bc354acf6dec8c62416e"
+  },
+  {
+    "file": "02-signature-drape/fabrics-and-thumbnails/emerald.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "e0e81fad2668d045d3f36c9565af0cc8ad78c35ef175a2173959ee947de7c742"
+  },
+  {
+    "file": "02-signature-drape/fabrics-and-thumbnails/ruby.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "6e2bce4627e65c1d5755e9d43aa12f63a0bf5e74052043e7d8ce3a2d4df03239"
+  },
+  {
+    "file": "02-signature-drape/fabrics-and-thumbnails/purple.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "80ccdb57e1c573709e25c15ace752f750bdec099fa7ca12ec50575bae9ceff40"
+  },
+  {
+    "file": "02-signature-drape/fabrics-and-thumbnails/mustard.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "97148e569c5fc92fc7d45e79651883c668a15a8ee09567891322a14ce38933fd"
+  },
+  {
+    "file": "02-signature-drape/fabrics-and-thumbnails/blue.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "b665d3bcc3604683fea146786e51914b98f2665a45e90a4264e6b0edcb8f60c7"
+  },
+  {
+    "file": "06-make-it-yours/fabrics-and-thumbnails/emerald.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "e0e81fad2668d045d3f36c9565af0cc8ad78c35ef175a2173959ee947de7c742"
+  },
+  {
+    "file": "06-make-it-yours/fabrics-and-thumbnails/ruby.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "6e2bce4627e65c1d5755e9d43aa12f63a0bf5e74052043e7d8ce3a2d4df03239"
+  },
+  {
+    "file": "06-make-it-yours/fabrics-and-thumbnails/purple.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "80ccdb57e1c573709e25c15ace752f750bdec099fa7ca12ec50575bae9ceff40"
+  },
+  {
+    "file": "06-make-it-yours/fabrics-and-thumbnails/mustard.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "97148e569c5fc92fc7d45e79651883c668a15a8ee09567891322a14ce38933fd"
+  },
+  {
+    "file": "06-make-it-yours/fabrics-and-thumbnails/blue.png",
+    "role": "Reused fabric macro from prior kit; approximate patterns, not exact garment match",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "b665d3bcc3604683fea146786e51914b98f2665a45e90a4264e6b0edcb8f60c7"
+  },
+  {
+    "file": "06-make-it-yours/models-transparent/emerald-thumbnail.png",
+    "role": "Reuse section 2 emerald cutout as model thumbnail",
+    "width": 887,
+    "height": 1774,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "centerAlpha": 253,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "febacc6291c79bea248f5b29798d7109661ca3211a394f1edfb4cc4f840b7e1a"
+  },
+  {
+    "file": "shared-backgrounds/ivory-paper.png",
+    "role": "Existing ivory paper texture",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "f69833d9f6f44c4a97475fc7c56b53332ec339fc6a5d9429f66c89af07dc354e"
+  },
+  {
+    "file": "04-worn-beautifully/wine-brocade-background.png",
+    "role": "Existing wine textile background",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "alphaRange": null,
+    "centerAlpha": null,
+    "origin": "matching recreation, not exact recovered source layer",
+    "sha256": "78bf9578a7ddb7697834b525d9a63667da5df16e623ea845b2b49b39d7d5aa5f"
+  }
+]

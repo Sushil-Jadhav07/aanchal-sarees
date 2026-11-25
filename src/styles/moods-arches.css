@@ -1,0 +1,76 @@
+/* Section 04, temple arches. Desktop sizes are in cqw of .ma-stage, measured from the reference
+   (1969px wide: 1 reference px = 0.0508cqw). */
+.ma-stage {
+  container-type: inline-size;
+  font-family: 'Newsreader Variable', var(--font-serif);
+}
+
+/* ---- photo inside the arch window */
+.ma-zoom {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 80%;
+  transition: transform 0.9s ease-out;
+}
+.ma-card:hover .ma-zoom,
+.ma-card:focus-visible .ma-zoom {
+  transform: scale(1.05);
+}
+.ma-zoom img {
+  position: absolute;
+  left: 9.6%;
+  top: var(--photo-top);
+  width: 80.5%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 3 / 4;
+}
+/* A mirrored copy continues the photo's own background up into the tip of the arch (never the person). */
+.ma-zoom img.ma-mirror {
+  transform: scaleY(-1);
+  transform-origin: top;
+}
+
+/* ---- layout */
+.ma-title {
+  font-weight: 600;
+  font-variation-settings: 'opsz' 60;
+  letter-spacing: -0.012em;
+  line-height: 1.1;
+}
+@media (min-width: 1024px) {
+  .ma-stage {
+    max-width: 1969px;
+    margin-inline: auto;
+    padding: 4.2cqw 0 4cqw;
+  }
+  .ma-head {
+    gap: 2.3cqw;
+  }
+  .ma-title {
+    font-size: 4.32cqw;
+    white-space: nowrap;
+  }
+  .ma-rule {
+    width: 7.3cqw;
+  }
+  .ma-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0.8cqw;
+  }
+  /* each column is 15.75cqw; the arch box is a little wider because the frame PNG has transparent margins */
+  .ma-item {
+    width: 15.75cqw;
+    margin-top: var(--stagger);
+  }
+  .ma-box {
+    width: 17.6cqw;
+    margin-inline: -0.93cqw;
+  }
+  .ma-label {
+    margin-top: -0.55cqw;
+    font-size: max(11px, 0.98cqw);
+  }
+}

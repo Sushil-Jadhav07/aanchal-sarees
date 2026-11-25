@@ -1,0 +1,330 @@
+/* Section 11. Desktop sizes come from the 1672 x 941 reference; there 1 reference px = 0.05981cqw. */
+
+/* ---- background silk ---------------------------------------------------------------------------
+   Desktop: three slices. The two ends (with the gold borders) keep their shape at any screen width,
+   and only the plain folds in the middle stretch. */
+.br-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  overflow: hidden;
+  pointer-events: none;
+}
+.br-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 4, 8, 0.18); /* deepens the silk to the tone of the reference */
+}
+.br-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.br-bg-slices {
+  display: none;
+}
+
+/* ---- phone / tablet (flowing layout) ------------------------------------------------------------ */
+.br-stage {
+  padding-block: 4rem;
+}
+.br-head {
+  padding-inline: 1.25rem;
+  text-align: center;
+}
+.br-lotus {
+  display: block;
+  width: 2.6rem;
+  margin-inline: auto;
+  color: #dcb06a;
+}
+.br-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #f4e4c8;
+}
+.br-eyebrow i,
+.br-name i {
+  display: block;
+  height: 1px;
+  background: #c4954f;
+}
+.br-eyebrow i {
+  width: 3rem;
+}
+.br-title {
+  margin-top: 0.8rem;
+  font-size: min(2.6rem, 9.4vw);
+  font-weight: 400;
+  font-variation-settings: 'opsz' 72;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  color: #fbf0dd;
+}
+.br-group {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.br-carousel {
+  position: relative;
+  height: var(--stage-h);
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+.br-carousel:active {
+  cursor: grabbing;
+}
+.br-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  border: 1px solid #c79a52;
+  box-shadow: 0 24px 40px -18px rgba(0, 0, 0, 0.75);
+}
+.br-arrow {
+  position: absolute;
+  top: calc(50% - 1.4rem);
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid #c4954f;
+  border-radius: 999px;
+  background: rgba(46, 4, 14, 0.4);
+  color: #f6e8cf;
+  cursor: pointer;
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+}
+.br-arrow:hover {
+  background: #e2bd78;
+  color: #3d0614;
+}
+.br-arrow svg {
+  width: 56%;
+  height: 56%;
+}
+.br-prev {
+  left: 0.75rem;
+}
+.br-next {
+  right: 0.75rem;
+}
+.br-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.75rem;
+  padding-inline: 1.25rem;
+  text-align: center;
+}
+.br-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  font-size: min(1.9rem, 6.8vw);
+  font-style: italic;
+  font-variation-settings: 'opsz' 40;
+  line-height: 1.2;
+  color: #fbf0dd;
+}
+.br-name span {
+  white-space: nowrap;
+}
+.br-name i {
+  flex: 0 1 4rem;
+  min-width: 0.75rem;
+}
+.br-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14rem;
+  min-height: 3rem;
+  margin-top: 1.4rem;
+  padding-inline: 1.5rem;
+  border: 1px solid #f1e0c0;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #fbf0dd;
+  cursor: pointer;
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+}
+.br-cta:hover {
+  background: #fbf0dd;
+  color: #3d0614;
+}
+.br-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+.br-dots button {
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.75rem;
+  cursor: pointer;
+}
+.br-dots span {
+  display: block;
+  flex: none;
+  width: var(--dot);
+  height: var(--dot);
+  border: 1.5px solid #cfa056;
+  border-radius: 999px;
+  transition:
+    width 0.3s,
+    background-color 0.3s;
+}
+.br-dots button[aria-current='true'] span {
+  border-color: #fbf0dd;
+  background: #fbf0dd;
+}
+
+/* ---- desktop: positions measured from the reference --------------------------------------------- */
+@media (min-width: 1024px) {
+  .br-bg img {
+    display: none;
+  }
+  .br-bg-slices {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    container-type: size;
+  }
+  .br-bg-slices span {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .br-bg-slices span:nth-child(1) {
+    flex: 0 0 calc(100cqh * 420 / 941);
+    background-size: auto 100%;
+    background-position: left top;
+  }
+  .br-bg-slices span:nth-child(2) {
+    flex: 1 1 0;
+    margin-inline: -1px;
+    background-size: 201.45% 100%;
+    background-position: 49.88% top;
+  }
+  .br-bg-slices span:nth-child(3) {
+    flex: 0 0 calc(100cqh * 422 / 941);
+    background-size: auto 100%;
+    background-position: right top;
+  }
+
+  .br-stage {
+    position: relative;
+    container-type: inline-size;
+    aspect-ratio: 1672 / 941;
+    /* as wide as the screen, but never taller than the window below the header */
+    width: min(100%, max(1000px, calc((100svh - 4rem) * 1.7768)));
+    margin-inline: auto;
+    padding: 0;
+  }
+  .br-head {
+    position: absolute;
+    inset-inline: 0;
+    top: 1.35cqw;
+    padding: 0;
+  }
+  .br-lotus {
+    width: 2.8cqw;
+  }
+  .br-eyebrow {
+    gap: 1.75cqw;
+    margin-top: 0.55cqw;
+    font-size: 1.22cqw;
+    line-height: 1.4;
+  }
+  .br-eyebrow i {
+    width: 7.95cqw;
+  }
+  .br-title {
+    position: absolute;
+    inset-inline: 0;
+    top: 5.4cqw;
+    margin: 0;
+    font-size: 4.87cqw;
+    white-space: nowrap;
+  }
+  .br-group {
+    position: absolute;
+    inset-inline: 0;
+    top: 11.9cqw;
+    height: 31.76cqw;
+    margin: 0;
+  }
+  .br-carousel {
+    height: 100%;
+  }
+  .br-card {
+    border-width: max(1px, 0.13cqw);
+    box-shadow: 0 1.4cqw 2.4cqw -0.8cqw rgba(0, 0, 0, 0.75);
+  }
+  .br-arrow {
+    top: 13.97cqw;
+    width: 3.1cqw;
+    height: 3.1cqw;
+  }
+  .br-prev {
+    left: 4.04cqw;
+  }
+  .br-next {
+    right: 3.98cqw;
+  }
+  .br-foot {
+    position: absolute;
+    inset-inline: 0;
+    top: 43.85cqw;
+    margin: 0;
+    padding: 0;
+  }
+  .br-name {
+    gap: 2.7cqw;
+    font-size: 2.63cqw;
+    line-height: 1.15;
+  }
+  .br-name i {
+    flex: 0 0 7.95cqw;
+  }
+  .br-cta {
+    min-width: 21.3cqw;
+    height: 3.2cqw;
+    min-height: 40px;
+    margin-top: 1.3cqw;
+    padding-inline: 1cqw;
+    border-width: max(1px, 0.09cqw);
+    border-radius: 0.6cqw;
+    font-size: max(12px, 1.2cqw);
+  }
+  .br-dots {
+    margin-top: 0.5cqw;
+  }
+  .br-dots button {
+    width: 2.09cqw;
+    height: 3.2cqw;
+    min-height: 32px;
+    min-width: 22px;
+  }
+}

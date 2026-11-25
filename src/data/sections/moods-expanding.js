@@ -1,0 +1,88 @@
+// Data for the "moods-expanding" section. Images live in public/images/.
+//
+// Photo framing (used by the desktop panels):
+//   faceX     where the face is in the source photo (0 = left edge, 1 = right edge)
+//   closed    narrow panel: `at` = where the face should sit across the panel, `zoom` = enlargement
+//   open      selected wide panel: same two values
+//   top       how far the panel's slanted top edge starts below the selected panel's top (% of height)
+
+export const moods = [
+  {
+    id: 'festive',
+    label: 'Festive',
+    cta: 'Shop festive',
+    src: `/images/moods-expanding/01-festive-mustard.png`,
+    alt: 'Smiling woman in a mustard silk saree resting her chin on her hand, with brass lamps and marigolds.',
+    pos: '45% 30%',
+    faceX: 0.475,
+    closed: { at: 0.63, zoom: 1 },
+    open: { at: 0.5, zoom: 1.04 },
+    top: 6.9,
+    href: null,
+  },
+  {
+    id: 'wedding',
+    label: 'Wedding',
+    cta: 'Discover bridal',
+    src: `/images/moods-expanding/02-wedding-ruby.png`,
+    alt: 'Bride in a ruby and gold saree with jasmine flowers, looking down and smiling in a carved stone courtyard.',
+    pos: '50% 18%',
+    faceX: 0.6,
+    closed: { at: 0.66, zoom: 1.05 },
+    open: { at: 0.59, zoom: 1.1 },
+    top: 6,
+    href: '#bridal',
+  },
+  {
+    id: 'traditional',
+    label: 'Traditional',
+    cta: 'Shop traditional',
+    src: `/images/moods-expanding/03-traditional-emerald.png`,
+    alt: 'Woman in an emerald green saree with a gold border, looking up thoughtfully.',
+    pos: '50% 30%',
+    faceX: 0.47,
+    closed: { at: 0.59, zoom: 1.13 },
+    open: { at: 0.5, zoom: 1.08 },
+    top: 5.5,
+    href: null,
+  },
+  {
+    id: 'everyday',
+    label: 'Everyday',
+    cta: 'Shop everyday',
+    src: `/images/moods-expanding/04-everyday-lavender.png`,
+    alt: 'Woman in a soft lavender silk saree resting her chin on her hand, looking up.',
+    pos: '50% 28%',
+    faceX: 0.49,
+    closed: { at: 0.57, zoom: 1.12 },
+    open: { at: 0.52, zoom: 1.08 },
+    top: 7.5,
+    href: null,
+  },
+  {
+    id: 'evening',
+    label: 'Evening',
+    cta: 'Shop evening',
+    src: `/images/moods-expanding/05-evening-navy.png`,
+    alt: 'Woman in a navy blue silk saree with gold motifs, looking to the side.',
+    pos: '55% 28%',
+    faceX: 0.54,
+    closed: { at: 0.65, zoom: 1.1 },
+    open: { at: 0.52, zoom: 1.08 },
+    top: 7.5,
+    href: null,
+  },
+  {
+    id: 'gifting',
+    label: 'Gifting',
+    cta: 'Shop gifting',
+    src: `/images/moods-expanding/06-gifting-pink.png`,
+    alt: 'Woman in a pink silk saree holding a gift box tied with a wine ribbon.',
+    pos: '55% 28%',
+    faceX: 0.6,
+    closed: { at: 0.63, zoom: 1.08 },
+    open: { at: 0.56, zoom: 1.08 },
+    top: 8.9,
+    href: null,
+  },
+]

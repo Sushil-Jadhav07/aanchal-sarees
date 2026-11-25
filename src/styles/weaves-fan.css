@@ -1,0 +1,193 @@
+/* Section 07, desktop: the stage is 1896 x 800 reference px; sizes are in cqw (1 ref px = 0.05274cqw). */
+.wf-stage {
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 1896 / 800;
+  width: 100%;
+  isolation: isolate;
+  font-family: 'Newsreader Variable', var(--font-serif);
+}
+
+.wf-title {
+  position: absolute;
+  inset-inline: 0;
+  top: 2.1cqw;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 4.02cqw;
+  font-weight: 600;
+  font-variation-settings: 'opsz' 60;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  color: #6f0b27;
+}
+.wf-title em {
+  margin-left: 0.04em;
+  color: #a8721f;
+}
+
+/* Every shape is a box positioned on the stage, with its own curved clip-path. */
+.wf-shape {
+  position: absolute;
+}
+.wf-clip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* ---- silk wings */
+.wf-wing {
+  z-index: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 1cqw 0.9cqw rgba(86, 40, 8, 0.2));
+}
+.wf-wing img {
+  position: absolute;
+  max-width: none;
+  user-select: none;
+}
+/* the silk darkens where it disappears behind the cards */
+.wf-wing-left .wf-shade {
+  background: linear-gradient(to right, transparent 55%, rgba(38, 0, 14, 0.6));
+}
+.wf-wing-right .wf-shade {
+  background: linear-gradient(to right, rgba(38, 0, 14, 0.55), transparent 14%);
+}
+.wf-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ---- folded orange edge behind the last card */
+.wf-fold {
+  pointer-events: none;
+  filter: drop-shadow(0.35cqw 0.5cqw 0.5cqw rgba(86, 30, 4, 0.28));
+}
+.wf-fold .wf-clip {
+  background: #9c2c0c;
+}
+.wf-fold img {
+  position: absolute;
+  max-width: none;
+}
+.wf-fold .wf-clip::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(50, 6, 0, 0.65), transparent 38%, rgba(255, 196, 120, 0.16) 70%, rgba(60, 8, 0, 0.35));
+}
+
+/* ---- cards */
+.wf-cards > li {
+  position: static;
+}
+.wf-card {
+  position: absolute;
+  pointer-events: none; /* only the curved shape itself (the button) is clickable, not its bounding box */
+  filter: drop-shadow(0 1.15cqw 0.9cqw rgba(86, 40, 8, 0.27));
+  transition:
+    translate 0.5s var(--ease-silk),
+    scale 0.5s var(--ease-silk),
+    filter 0.35s;
+}
+.wf-card:hover,
+.wf-card:focus-within {
+  z-index: 10 !important;
+  translate: 0 -0.8cqw;
+  scale: 1.022;
+  filter: drop-shadow(0 1.8cqw 1.3cqw rgba(86, 40, 8, 0.32));
+}
+.wf-card button {
+  pointer-events: auto;
+  cursor: pointer;
+  text-align: left;
+}
+.wf-card button:focus-visible {
+  outline: none;
+}
+.wf-card:has(button:focus-visible) {
+  filter: drop-shadow(0 0 0.35cqw #c9972f) drop-shadow(0 0 0.35cqw #c9972f);
+}
+.wf-photo {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 3 / 4;
+}
+/* soft left edge so the photo melts into the plain colour under the name */
+.wf-photo-main {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 16%);
+  mask-image: linear-gradient(to right, transparent, #000 16%);
+}
+.wf-photo-fill {
+  transform: scaleX(-1);
+}
+/* light and shade that give each panel its curved, folded look */
+.wf-light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      94deg,
+      rgba(30, 6, 0, 0.3) 0%,
+      rgba(30, 6, 0, 0) 7%,
+      rgba(255, 236, 200, 0.13) 15%,
+      rgba(255, 236, 200, 0) 28%,
+      rgba(30, 6, 0, 0) 74%,
+      rgba(30, 6, 0, 0.16) 88%,
+      rgba(255, 226, 180, 0.1) 94%,
+      rgba(30, 6, 0, 0.32) 100%
+    ),
+    linear-gradient(to top, rgba(30, 6, 0, 0.26), transparent 20%),
+    linear-gradient(to bottom, rgba(255, 240, 214, 0.1), transparent 24%);
+}
+.wf-edge {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.wf-name {
+  position: absolute;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  transform-origin: center bottom;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 55;
+  line-height: 1;
+  color: #fbeed6;
+  text-shadow: 0 0.1cqw 0.9cqw rgba(30, 6, 0, 0.35);
+  pointer-events: none;
+}
+
+/* ---- call to action */
+.wf-cta {
+  position: absolute;
+  left: 50%;
+  top: 86.9%;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1cqw;
+  width: 22.6cqw;
+  height: 3.55cqw;
+  translate: -50% 0;
+  border: 1px solid #7a1230;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 1.6cqw;
+  font-weight: 600;
+  color: #6f0b27;
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+}
+.wf-cta:hover {
+  background: #6f0b27;
+  color: var(--color-cream);
+}

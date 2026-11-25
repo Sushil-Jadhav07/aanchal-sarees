@@ -1,0 +1,168 @@
+/* Section 10, desktop: the stage is the 2048 x 768 reference; sizes are in cqw (1 ref px = 0.048828cqw). */
+.wb-stage {
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 2048 / 768;
+  width: 100%;
+  font-family: 'Newsreader Variable', var(--font-serif);
+}
+
+.wb-title {
+  position: absolute;
+  left: 3.8cqw;
+  top: 9.7cqw;
+  margin: 0;
+  font-size: 3.34cqw;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 48;
+  line-height: 1.09;
+  letter-spacing: -0.012em;
+  white-space: nowrap;
+  color: #fdf8f3;
+}
+.wb-title span,
+.wb-title em {
+  display: block;
+}
+.wb-title em {
+  margin-left: -0.5cqw;
+  font-weight: 400;
+  color: #f2bf4e;
+}
+.wb-sub {
+  position: absolute;
+  left: 3.62cqw;
+  top: 18.7cqw;
+  margin: 0;
+  font-size: 1.52cqw;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: #fbf3ee;
+}
+.wb-sub span {
+  display: block;
+}
+.wb-rule {
+  position: absolute;
+  left: 3.62cqw;
+  top: 24.15cqw;
+  width: 5.15cqw;
+  height: max(2px, 0.15cqw);
+  background: #e9b449;
+}
+
+/* ---- cards: left / top / width / height come from the slot the card is in */
+.wb-card {
+  position: absolute;
+  border-radius: 1.3cqw;
+  padding: max(2px, 0.16cqw); /* the gold frame */
+  background: linear-gradient(155deg, #ffe08a 0%, #c98a22 28%, #f6c95c 52%, #b97a1a 76%, #ffd877 100%);
+  box-shadow: 0 1.1cqw 2.4cqw -0.5cqw rgba(0, 0, 0, 0.6);
+  transition:
+    left 0.65s var(--ease-silk),
+    top 0.65s var(--ease-silk),
+    width 0.65s var(--ease-silk),
+    height 0.65s var(--ease-silk),
+    box-shadow 0.35s,
+    translate 0.35s var(--ease-silk);
+}
+.wb-card[data-centre='true'] {
+  border-radius: 1.5cqw;
+  padding: max(3px, 0.24cqw);
+  box-shadow:
+    0 0 1.5cqw -0.2cqw rgba(246, 190, 70, 0.35),
+    0 1.4cqw 3cqw -0.6cqw rgba(0, 0, 0, 0.65);
+}
+.wb-card:hover {
+  translate: 0 -0.45cqw;
+}
+.wb-card.wb-enter {
+  animation: fade-in 0.65s ease-out both;
+}
+.wb-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  corner-shape: round;
+  background: #2a0a0c;
+}
+.wb-face > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.8s ease-out;
+}
+.wb-card:hover .wb-face > img {
+  scale: 1.04;
+}
+.wb-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(14, 5, 2, 0.88) 0%, rgba(14, 5, 2, 0.55) 18%, rgba(14, 5, 2, 0) 46%);
+}
+.wb-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.wb-select:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -0.6cqw;
+}
+.wb-play {
+  position: absolute;
+  left: 50%;
+  bottom: 4.42cqw;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: max(32px, 2.7cqw);
+  aspect-ratio: 1;
+  translate: -50% 0;
+  border: max(1.5px, 0.1cqw) solid #fff;
+  border-radius: 999px;
+  background: rgba(20, 8, 4, 0.18);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    scale 0.25s var(--ease-silk),
+    background-color 0.25s;
+}
+.wb-play:hover {
+  scale: 1.12;
+  background: rgba(20, 8, 4, 0.5);
+}
+.wb-play svg {
+  width: 42%;
+  height: 42%;
+  margin-left: 8%;
+}
+.wb-card[data-centre='true'] .wb-play {
+  bottom: 5.75cqw;
+}
+.wb-caption {
+  position: absolute;
+  inset-inline: 0.2cqw;
+  bottom: 0.9cqw;
+  pointer-events: none;
+  text-align: center;
+  font-size: 1.25cqw;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #fff8f0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+.wb-caption span {
+  display: block;
+  white-space: nowrap;
+}
+.wb-card[data-centre='true'] .wb-caption {
+  bottom: 1.6cqw;
+  font-size: 1.4cqw;
+}

@@ -1,0 +1,14 @@
+{
+  "page": "#FAF6EE",
+  "wine": "#681C32",
+  "gold": "#B79A61",
+  "darkGoldText": "#8C641F",
+  "ink": "#29221F",
+  "weavePanelFallbacks": {
+    "banarasi": "#AD761F",
+    "kanjivaram": "#542638",
+    "paithani": "#145C43",
+    "chanderi": "#B84B32"
+  },
+  "note": "Implementation approximations, not sampled uniform colours; generated photos contain many tones. Section 3 needs no separate flat colour image."
+}

@@ -1,0 +1,343 @@
+[
+  {
+    "file": "02-silk-orbit/model-ruby-transparent.png",
+    "role": "Main upright model",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "02-silk-orbit/model-emerald-transparent.png",
+    "role": "Second upright model",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "02-silk-orbit/model-mustard-transparent.png",
+    "role": "Supplemental third slide model",
+    "origin": "reused supporting asset",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "02-silk-orbit/model-blue-transparent.png",
+    "role": "Supplemental fourth slide model",
+    "origin": "reused supporting asset",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "02-silk-orbit/wine-ribbon-transparent.png",
+    "role": "Decorative ribbon, not a 3D mesh",
+    "origin": "reused supporting asset",
+    "width": 2172,
+    "height": 724,
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "03-expanding-moods/01-festive-mustard.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "03-expanding-moods/02-wedding-ruby.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "03-expanding-moods/03-traditional-emerald.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "03-expanding-moods/04-everyday-lavender.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "03-expanding-moods/05-evening-navy.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "03-expanding-moods/06-gifting-pink.png",
+    "role": "Occasion photo with background",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "04-stacked-weaves/01-banarasi-portrait.png",
+    "role": "Front collection card photo",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/fabrics/ruby.png",
+    "role": "Fabric detail; use for swatches, cards and thumbnails",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/fabrics/emerald.png",
+    "role": "Fabric detail; use for swatches, cards and thumbnails",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/fabrics/purple-peacock.png",
+    "role": "Fabric detail; use for swatches, cards and thumbnails",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/fabrics/mustard.png",
+    "role": "Fabric detail; use for swatches, cards and thumbnails",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/fabrics/navy.png",
+    "role": "Fabric detail; use for swatches, cards and thumbnails",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "04-stacked-weaves/02-kanjivaram-fabric.png",
+    "role": "Second collection card",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "04-stacked-weaves/03-paithani-fabric.png",
+    "role": "Third collection card",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "05-shade-selector/seven-sarees-rail-transparent.png",
+    "role": "Seven hanging sarees and rail combined flat artwork",
+    "origin": "reused supporting asset",
+    "width": 1774,
+    "height": 887,
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "06-craftsmanship/01-weaver-at-loom.png",
+    "role": "Main craft photo",
+    "origin": "new reference-based recreation",
+    "width": 1448,
+    "height": 1086,
+    "alpha_range": null
+  },
+  {
+    "file": "06-craftsmanship/02-gold-thread.png",
+    "role": "Gold thread closeup",
+    "origin": "new reference-based recreation",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "06-craftsmanship/03-weaving-hands.png",
+    "role": "Hands weaving silk",
+    "origin": "reused supporting asset",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "07-focus-bridal/01-ivory.png",
+    "role": "Full-colour bridal portrait with background; dim in CSS",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "07-focus-bridal/02-emerald.png",
+    "role": "Full-colour bridal portrait with background; dim in CSS",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "07-focus-bridal/03-crimson-centre.png",
+    "role": "Full-colour bridal portrait with background; dim in CSS",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "07-focus-bridal/04-pink.png",
+    "role": "Full-colour bridal portrait with background; dim in CSS",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "07-focus-bridal/05-purple.png",
+    "role": "Full-colour bridal portrait with background; dim in CSS",
+    "origin": "new reference-based recreation",
+    "width": 1086,
+    "height": 1448,
+    "alpha_range": null
+  },
+  {
+    "file": "08-styling-gallery/01-festive-drape.png",
+    "role": "Clean styling slider photograph",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": null
+  },
+  {
+    "file": "08-styling-gallery/02-classic-pleat.png",
+    "role": "Clean styling slider photograph",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": null
+  },
+  {
+    "file": "08-styling-gallery/03-everyday-elegance.png",
+    "role": "Clean styling slider photograph",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": null
+  },
+  {
+    "file": "08-styling-gallery/04-evening-edit.png",
+    "role": "Clean styling slider photograph",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": null
+  },
+  {
+    "file": "08-styling-gallery/05-softer-silhouette.png",
+    "role": "Clean styling slider photograph",
+    "origin": "new reference-based recreation",
+    "width": 1024,
+    "height": 1536,
+    "alpha_range": null
+  },
+  {
+    "file": "09-shopping-footer/01-ruby-banarasi.png",
+    "role": "Shopping product portrait with background",
+    "origin": "new reference-based recreation",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "09-shopping-footer/02-emerald-kanjivaram.png",
+    "role": "Shopping product portrait with background",
+    "origin": "new reference-based recreation",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "09-shopping-footer/03-mustard-paithani.png",
+    "role": "Shopping product portrait with background",
+    "origin": "new reference-based recreation",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "09-shopping-footer/04-navy-chanderi.png",
+    "role": "Shopping product portrait with background",
+    "origin": "new reference-based recreation",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/backgrounds/ivory-paper.png",
+    "role": "Optional cream texture overlay",
+    "origin": "reused supporting asset",
+    "width": 1672,
+    "height": 941,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/backgrounds/wine-brocade.png",
+    "role": "Bridal/footer wine background",
+    "origin": "reused supporting asset",
+    "width": 1672,
+    "height": 941,
+    "alpha_range": null
+  },
+  {
+    "file": "shared/backgrounds/gold-paisley-transparent.png",
+    "role": "Decorative corner overlay",
+    "origin": "reused supporting asset",
+    "width": 1312,
+    "height": 1199,
+    "alpha_range": [
+      0,
+      255
+    ]
+  }
+]

@@ -1,0 +1,422 @@
+/*
+ * "Your wardrobe, beautifully woven": the design is 1672 x 941. On wide screens every part is placed as a
+ * percentage of that canvas and sized in container units (cqw), so it scales like the picture.
+ * Below 900px the parts simply stack. Positions below are the design's pixels / 1672 (x) and / 941 (y).
+ */
+.wd-section {
+  position: relative;
+  overflow: hidden;
+  background: #efdcc1 url('/images/wardrobe/background.png') center bottom / cover no-repeat;
+  color: var(--color-ink);
+}
+.wd-wrap {
+  container: wd / inline-size;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+.wd-canvas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2rem 1rem 2.5rem;
+}
+
+/* ---- brand mark: the supplied logo, on the wall ---- */
+.wd-brand {
+  display: flex;
+  justify-content: center;
+}
+.wd-logo {
+  height: 4.6rem;
+}
+
+/* ---- heading ---- */
+.wd-head {
+  text-align: center;
+}
+.wd-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  color: var(--color-wine);
+  font-size: clamp(2.2rem, 8.4vw, 3.4rem);
+}
+.wd-sub {
+  margin-top: 0.5rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  color: var(--color-ink-soft);
+}
+
+/* ---- category tabs ---- */
+.wd-tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+.wd-tabs::-webkit-scrollbar {
+  display: none;
+}
+.wd-tab {
+  flex: none;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border-radius: 9999px;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-wine);
+  transition: background-color 0.25s, color 0.25s;
+}
+.wd-tab:hover:not([aria-pressed='true']) {
+  color: var(--color-wine-deep);
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-underline-offset: 6px;
+}
+.wd-tab[aria-pressed='true'] {
+  background: var(--color-wine);
+  color: var(--color-cream);
+}
+.wd-tabs i {
+  flex: none;
+  width: 1px;
+  height: 1.7rem;
+  background: color-mix(in srgb, var(--color-gold) 75%, transparent);
+}
+.wd-tabs i[data-hide='true'] {
+  visibility: hidden;
+}
+
+/* ---- the rail ---- */
+.wd-stage {
+  position: relative;
+  width: 100%;
+}
+.wd-foot {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-wine);
+  transition: color 0.25s, transform 0.3s var(--ease-silk);
+}
+.wd-foot.is-front {
+  padding: 0.35em 0.95em;
+  border-radius: 9999px;
+  background: var(--color-wine);
+  color: var(--color-cream);
+  font-weight: 600;
+  font-size: 0.92em;
+  box-shadow: 0 6px 14px -6px rgba(71, 8, 25, 0.6);
+}
+
+/* ---- product card ---- */
+.wd-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 24rem);
+  padding: 0.3rem;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 80%, transparent);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--color-cream) 88%, transparent);
+  --n: 0.7rem; /* radius of the notched corners */
+  --gold: color-mix(in srgb, var(--color-gold) 85%, transparent);
+  -webkit-mask:
+    radial-gradient(circle var(--n) at 0 0, #0000 98%, #000) top left / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 100% 0, #0000 98%, #000) top right / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 0 100%, #0000 98%, #000) bottom left / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 100% 100%, #0000 98%, #000) bottom right / 51% 51% no-repeat;
+  mask:
+    radial-gradient(circle var(--n) at 0 0, #0000 98%, #000) top left / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 100% 0, #0000 98%, #000) top right / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 0 100%, #0000 98%, #000) bottom left / 51% 51% no-repeat,
+    radial-gradient(circle var(--n) at 100% 100%, #0000 98%, #000) bottom right / 51% 51% no-repeat;
+}
+/* a thin gold arc follows each notch */
+.wd-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0 0, #0000 calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 1.6px), #0000 calc(var(--n) + 2px)) top left / calc(var(--n) + 4px) calc(var(--n) + 4px) no-repeat,
+    radial-gradient(circle at 100% 0, #0000 calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 1.6px), #0000 calc(var(--n) + 2px)) top right / calc(var(--n) + 4px) calc(var(--n) + 4px) no-repeat,
+    radial-gradient(circle at 0 100%, #0000 calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 1.6px), #0000 calc(var(--n) + 2px)) bottom left / calc(var(--n) + 4px) calc(var(--n) + 4px) no-repeat,
+    radial-gradient(circle at 100% 100%, #0000 calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 0.5px), var(--gold) calc(var(--n) + 1.6px), #0000 calc(var(--n) + 2px)) bottom right / calc(var(--n) + 4px) calc(var(--n) + 4px) no-repeat;
+}
+.wd-card-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 4.6;
+  border-radius: 0.3rem;
+  background: radial-gradient(120% 90% at 50% 20%, #ecdcc4 0%, #e5d2b6 70%, #dcc7a8 100%);
+}
+.wd-card-img img {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  max-width: 80%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  translate: -50% 0;
+  filter: drop-shadow(10px 16px 14px rgba(70, 35, 15, 0.3));
+}
+.wd-card-img img.is-photo {
+  inset: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  translate: none;
+  object-fit: cover;
+  object-position: 50% 75%;
+  filter: none;
+}
+.wd-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.55rem;
+  padding: 1rem 0.75rem 1.1rem;
+  text-align: center;
+}
+.wd-card-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--color-wine);
+  text-wrap: balance;
+}
+.wd-card-title.is-long {
+  font-size: 1.6rem;
+}
+.wd-card-tag {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--color-ink-soft);
+}
+.wd-card-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 78%;
+  color: var(--color-gold);
+}
+.wd-card-rule i {
+  height: 1px;
+  flex: 1;
+  background: color-mix(in srgb, var(--color-gold) 70%, transparent);
+}
+.wd-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: lining-nums;
+  color: var(--color-wine);
+}
+.wd-card-price.is-soon {
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-ink-soft);
+}
+.wd-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 2.9rem;
+  padding: 0 2.2rem;
+  border-radius: 9999px;
+  background: var(--color-wine);
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s var(--ease-silk);
+}
+.wd-card-cta:hover {
+  background: var(--color-wine-deep);
+  box-shadow: 0 10px 22px -12px rgba(71, 8, 25, 0.7);
+}
+.wd-card-cta:active {
+  transform: translateY(1px);
+}
+
+/* ---- "Explore the collection" ---- */
+.wd-explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  width: 100%;
+  color: var(--color-wine);
+}
+.wd-explore > i {
+  height: 1px;
+  flex: 1;
+  max-width: 16rem;
+  background: color-mix(in srgb, var(--color-gold) 75%, transparent);
+}
+.wd-explore p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+.wd-explore button {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  transition: background-color 0.25s, color 0.25s, transform 0.25s var(--ease-silk);
+}
+.wd-explore button:hover {
+  background: var(--color-wine);
+  color: var(--color-cream);
+}
+
+/* ---- wide: the design's own layout ---- */
+@container wd (min-width: 900px) {
+  .wd-canvas {
+    display: block;
+    aspect-ratio: 1672 / 941;
+    padding: 0;
+  }
+  .wd-canvas > * {
+    position: absolute;
+  }
+  /* brand and heading are centred on x = 663 (39.7%), not on the page */
+  .wd-brand {
+    left: 0;
+    width: 79.3%;
+    top: 0.6%;
+  }
+  .wd-logo {
+    height: 5.2cqw;
+  }
+  .wd-head {
+    left: 0;
+    top: 10.2%;
+    width: 79.8%;
+  }
+  .wd-title {
+    font-size: 3.92cqw;
+  }
+  .wd-sub {
+    margin-top: -0.45cqw;
+    font-size: 2.18cqw;
+  }
+  .wd-tabs {
+    left: 11.24%;
+    top: 24.1%;
+    width: 57%;
+    height: 4.25%;
+    overflow: visible;
+    padding: 0;
+  }
+  .wd-tab {
+    min-height: 0;
+    height: 100%;
+    padding: 0 2cqw;
+    font-size: 1.31cqw;
+  }
+  .wd-tab:first-child {
+    padding: 0 1.7cqw;
+    margin-right: 0.8cqw;
+  }
+  .wd-tabs i {
+    height: 2.1cqw;
+  }
+  .wd-stage {
+    left: 7.15%;
+    top: 28.5%;
+    width: 62.8%;
+    height: 60%;
+  }
+  .wd-foot {
+    font-size: 1.41cqw;
+  }
+  .wd-card {
+    --n: 0.85cqw;
+    left: 72.01%;
+    top: 25%;
+    width: 23.5%;
+    height: 63%;
+    padding: 0.36cqw;
+    border-radius: 0;
+  }
+  .wd-card-img {
+    flex: 0 0 52%;
+    aspect-ratio: auto;
+    border-radius: 0.1cqw;
+  }
+  .wd-card-body {
+    gap: 0;
+    padding: 0 1cqw 0.4cqw;
+  }
+  .wd-card-title {
+    font-size: 2.6cqw;
+  }
+  .wd-card-title.is-long {
+    font-size: 1.95cqw;
+  }
+  .wd-card-tag {
+    font-size: 1.44cqw;
+  }
+  .wd-card-rule {
+    width: 52%;
+  }
+  .wd-card-price {
+    font-size: 2.42cqw;
+  }
+  .wd-card-price.is-soon {
+    font-size: 1.5cqw;
+  }
+  .wd-card-cta {
+    min-height: 0;
+    height: 3cqw;
+    width: 14.8cqw;
+    padding: 0;
+    font-size: 1.5cqw;
+    gap: 0.6cqw;
+  }
+  .wd-explore {
+    left: 21.8%;
+    top: 91%;
+    width: 41.4%;
+    gap: 0.8cqw;
+  }
+  .wd-explore > i {
+    max-width: none;
+  }
+  .wd-explore p {
+    font-size: 1.9cqw;
+  }
+  .wd-explore button {
+    width: 2.4cqw;
+    height: 2.4cqw;
+  }
+}
