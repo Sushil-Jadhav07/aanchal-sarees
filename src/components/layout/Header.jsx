@@ -5,14 +5,30 @@ import { BagButton } from '../shared/cart'
 import BrandLogo from '../shared/BrandLogo'
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false)
+  const [shown, setShown] = useState(false)
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
+    // The page opens with the hero (#top). The header stays out of the way for all of it and slides in as the
+    // NEXT section starts to come up from the bottom of the screen. Scrolling back up into the hero tucks it away again.
+    const barHeight = 64
+    const onScroll = () => {
+      const hero = document.getElementById('top')
+      let show = true
+      if (hero) {
+        const bottom = hero.getBoundingClientRect().bottom
+        // pinned film: its stage lets go at bottom === innerHeight, so "less than" means the next section is arriving
+        show = hero.dataset.hero === 'scrub' ? bottom < window.innerHeight - 2 : bottom <= barHeight
+      }
+      setShown((s) => (s === show ? s : show))
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [])
 
   useEffect(() => {
@@ -22,18 +38,19 @@ export default function Header() {
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
 
-  const solid = scrolled || open
+  // if the bar tucks away while the mobile menu is open, close the menu with it
+  const menuOpen = open && shown
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        solid ? 'border-b border-gold/30 bg-cream/95 text-wine backdrop-blur' : 'bg-gradient-to-b from-wine-deep/70 to-transparent text-cream'
+      inert={!shown}
+      className={`fixed inset-x-0 top-0 z-50 border-b border-gold/30 bg-cream/95 text-wine backdrop-blur transition-[transform,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        shown ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-full opacity-0'
       }`}
     >
       <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-5 lg:px-12">
         <a href="#top" title="Back to top" className="shrink-0 rounded-md">
-          {/* over the dark hero: the white logo; on the solid cream bar: the burgundy one */}
-          <BrandLogo light={!solid} className="h-10 sm:h-11 lg:h-12" />
+          <BrandLogo light={false} className="h-10 sm:h-11 lg:h-12" />
         </a>
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
           {NAV.map((n) => (
@@ -51,16 +68,16 @@ export default function Header() {
         <button
           type="button"
           className="grid h-11 w-11 place-items-center lg:hidden"
-          aria-expanded={open}
+          aria-expanded={menuOpen}
           aria-controls="mobile-nav"
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           onClick={() => setOpen((v) => !v)}
         >
-          {open ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+          {menuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
         </button>
         </div>
       </div>
-      {open && (
+      {menuOpen && (
         <nav id="mobile-nav" aria-label="Main" className="border-t border-gold/30 bg-cream px-5 pb-5 text-wine lg:hidden">
           <ul>
             {NAV.map((n) => (
