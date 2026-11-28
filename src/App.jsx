@@ -11,7 +11,6 @@ import Craftsmanship from './components/sections/Craftsmanship'
 import WornBeautifully from './components/sections/WornBeautifully'
 import BridalWine from './components/sections/BridalWine'
 import BridalArches from './components/sections/BridalArches'
-import StylingGallery from './components/sections/StylingGallery'
 import ConsideredEdit from './components/sections/ConsideredEdit'
 import Footer from './components/layout/Footer'
 import { CartProvider } from './components/shared/cart'
@@ -36,7 +35,6 @@ export default function App() {
           <WornBeautifully /> {/* 10  #worn-beautifully */}
           <BridalWine /> {/* 11  #bridal */}
           <BridalArches /> {/* 12  #bridal-heirloom */}
-          <StylingGallery /> {/* 13  #styling */}
           <ConsideredEdit /> {/* #shop (+ footer below) */}
         </main>
         <Footer />

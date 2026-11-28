@@ -51,18 +51,17 @@
   background: #e9b449;
 }
 
-/* ---- cards: left / top / width / height come from the slot the card is in */
+/* ---- cards: useLoopCarousel paints width, height, transform and opacity (from the stage's top-left) on every frame */
 .wb-card {
   position: absolute;
+  left: 0;
+  top: 0;
   border-radius: 1.3cqw;
   padding: max(2px, 0.16cqw); /* the gold frame */
   background: linear-gradient(155deg, #ffe08a 0%, #c98a22 28%, #f6c95c 52%, #b97a1a 76%, #ffd877 100%);
   box-shadow: 0 1.1cqw 2.4cqw -0.5cqw rgba(0, 0, 0, 0.6);
+  will-change: transform, opacity;
   transition:
-    left 0.65s var(--ease-silk),
-    top 0.65s var(--ease-silk),
-    width 0.65s var(--ease-silk),
-    height 0.65s var(--ease-silk),
     box-shadow 0.35s,
     translate 0.35s var(--ease-silk);
 }
@@ -75,9 +74,6 @@
 }
 .wb-card:hover {
   translate: 0 -0.45cqw;
-}
-.wb-card.wb-enter {
-  animation: fade-in 0.65s ease-out both;
 }
 .wb-face {
   position: relative;

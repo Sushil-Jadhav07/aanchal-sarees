@@ -8,7 +8,6 @@ export const NAV = [
   { label: 'Wardrobe', href: '#wardrobe' },
   { label: 'Craft', href: '#craft' },
   { label: 'Bridal', href: '#bridal' },
-  { label: 'Styling', href: '#styling' },
   { label: 'Shop', href: '#shop' },
 ]
 
