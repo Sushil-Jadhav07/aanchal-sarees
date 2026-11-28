@@ -1,0 +1,317 @@
+[
+  {
+    "id": "emerald__gold__jhumkas",
+    "saree": "emerald",
+    "blouse": "gold",
+    "earrings": "jhumkas",
+    "image": "looks/emerald__gold__jhumkas.webp"
+  },
+  {
+    "id": "emerald__gold__pearl",
+    "saree": "emerald",
+    "blouse": "gold",
+    "earrings": "pearl",
+    "image": "looks/emerald__gold__pearl.webp"
+  },
+  {
+    "id": "emerald__gold__temple",
+    "saree": "emerald",
+    "blouse": "gold",
+    "earrings": "temple",
+    "image": "looks/emerald__gold__temple.webp"
+  },
+  {
+    "id": "emerald__emerald__jhumkas",
+    "saree": "emerald",
+    "blouse": "emerald",
+    "earrings": "jhumkas",
+    "image": "looks/emerald__emerald__jhumkas.webp"
+  },
+  {
+    "id": "emerald__emerald__pearl",
+    "saree": "emerald",
+    "blouse": "emerald",
+    "earrings": "pearl",
+    "image": "looks/emerald__emerald__pearl.webp"
+  },
+  {
+    "id": "emerald__emerald__temple",
+    "saree": "emerald",
+    "blouse": "emerald",
+    "earrings": "temple",
+    "image": "looks/emerald__emerald__temple.webp"
+  },
+  {
+    "id": "emerald__ivory__jhumkas",
+    "saree": "emerald",
+    "blouse": "ivory",
+    "earrings": "jhumkas",
+    "image": "looks/emerald__ivory__jhumkas.webp"
+  },
+  {
+    "id": "emerald__ivory__pearl",
+    "saree": "emerald",
+    "blouse": "ivory",
+    "earrings": "pearl",
+    "image": "looks/emerald__ivory__pearl.webp"
+  },
+  {
+    "id": "emerald__ivory__temple",
+    "saree": "emerald",
+    "blouse": "ivory",
+    "earrings": "temple",
+    "image": "looks/emerald__ivory__temple.webp"
+  },
+  {
+    "id": "magenta__gold__jhumkas",
+    "saree": "magenta",
+    "blouse": "gold",
+    "earrings": "jhumkas",
+    "image": "looks/magenta__gold__jhumkas.webp"
+  },
+  {
+    "id": "magenta__gold__pearl",
+    "saree": "magenta",
+    "blouse": "gold",
+    "earrings": "pearl",
+    "image": "looks/magenta__gold__pearl.webp"
+  },
+  {
+    "id": "magenta__gold__temple",
+    "saree": "magenta",
+    "blouse": "gold",
+    "earrings": "temple",
+    "image": "looks/magenta__gold__temple.webp"
+  },
+  {
+    "id": "magenta__emerald__jhumkas",
+    "saree": "magenta",
+    "blouse": "emerald",
+    "earrings": "jhumkas",
+    "image": "looks/magenta__emerald__jhumkas.webp"
+  },
+  {
+    "id": "magenta__emerald__pearl",
+    "saree": "magenta",
+    "blouse": "emerald",
+    "earrings": "pearl",
+    "image": "looks/magenta__emerald__pearl.webp"
+  },
+  {
+    "id": "magenta__emerald__temple",
+    "saree": "magenta",
+    "blouse": "emerald",
+    "earrings": "temple",
+    "image": "looks/magenta__emerald__temple.webp"
+  },
+  {
+    "id": "magenta__ivory__jhumkas",
+    "saree": "magenta",
+    "blouse": "ivory",
+    "earrings": "jhumkas",
+    "image": "looks/magenta__ivory__jhumkas.webp"
+  },
+  {
+    "id": "magenta__ivory__pearl",
+    "saree": "magenta",
+    "blouse": "ivory",
+    "earrings": "pearl",
+    "image": "looks/magenta__ivory__pearl.webp"
+  },
+  {
+    "id": "magenta__ivory__temple",
+    "saree": "magenta",
+    "blouse": "ivory",
+    "earrings": "temple",
+    "image": "looks/magenta__ivory__temple.webp"
+  },
+  {
+    "id": "mustard__gold__jhumkas",
+    "saree": "mustard",
+    "blouse": "gold",
+    "earrings": "jhumkas",
+    "image": "looks/mustard__gold__jhumkas.webp"
+  },
+  {
+    "id": "mustard__gold__pearl",
+    "saree": "mustard",
+    "blouse": "gold",
+    "earrings": "pearl",
+    "image": "looks/mustard__gold__pearl.webp"
+  },
+  {
+    "id": "mustard__gold__temple",
+    "saree": "mustard",
+    "blouse": "gold",
+    "earrings": "temple",
+    "image": "looks/mustard__gold__temple.webp"
+  },
+  {
+    "id": "mustard__emerald__jhumkas",
+    "saree": "mustard",
+    "blouse": "emerald",
+    "earrings": "jhumkas",
+    "image": "looks/mustard__emerald__jhumkas.webp"
+  },
+  {
+    "id": "mustard__emerald__pearl",
+    "saree": "mustard",
+    "blouse": "emerald",
+    "earrings": "pearl",
+    "image": "looks/mustard__emerald__pearl.webp"
+  },
+  {
+    "id": "mustard__emerald__temple",
+    "saree": "mustard",
+    "blouse": "emerald",
+    "earrings": "temple",
+    "image": "looks/mustard__emerald__temple.webp"
+  },
+  {
+    "id": "mustard__ivory__jhumkas",
+    "saree": "mustard",
+    "blouse": "ivory",
+    "earrings": "jhumkas",
+    "image": "looks/mustard__ivory__jhumkas.webp"
+  },
+  {
+    "id": "mustard__ivory__pearl",
+    "saree": "mustard",
+    "blouse": "ivory",
+    "earrings": "pearl",
+    "image": "looks/mustard__ivory__pearl.webp"
+  },
+  {
+    "id": "mustard__ivory__temple",
+    "saree": "mustard",
+    "blouse": "ivory",
+    "earrings": "temple",
+    "image": "looks/mustard__ivory__temple.webp"
+  },
+  {
+    "id": "ruby__gold__jhumkas",
+    "saree": "ruby",
+    "blouse": "gold",
+    "earrings": "jhumkas",
+    "image": "looks/ruby__gold__jhumkas.webp"
+  },
+  {
+    "id": "ruby__gold__pearl",
+    "saree": "ruby",
+    "blouse": "gold",
+    "earrings": "pearl",
+    "image": "looks/ruby__gold__pearl.webp"
+  },
+  {
+    "id": "ruby__gold__temple",
+    "saree": "ruby",
+    "blouse": "gold",
+    "earrings": "temple",
+    "image": "looks/ruby__gold__temple.webp"
+  },
+  {
+    "id": "ruby__emerald__jhumkas",
+    "saree": "ruby",
+    "blouse": "emerald",
+    "earrings": "jhumkas",
+    "image": "looks/ruby__emerald__jhumkas.webp"
+  },
+  {
+    "id": "ruby__emerald__pearl",
+    "saree": "ruby",
+    "blouse": "emerald",
+    "earrings": "pearl",
+    "image": "looks/ruby__emerald__pearl.webp"
+  },
+  {
+    "id": "ruby__emerald__temple",
+    "saree": "ruby",
+    "blouse": "emerald",
+    "earrings": "temple",
+    "image": "looks/ruby__emerald__temple.webp"
+  },
+  {
+    "id": "ruby__ivory__jhumkas",
+    "saree": "ruby",
+    "blouse": "ivory",
+    "earrings": "jhumkas",
+    "image": "looks/ruby__ivory__jhumkas.webp"
+  },
+  {
+    "id": "ruby__ivory__pearl",
+    "saree": "ruby",
+    "blouse": "ivory",
+    "earrings": "pearl",
+    "image": "looks/ruby__ivory__pearl.webp"
+  },
+  {
+    "id": "ruby__ivory__temple",
+    "saree": "ruby",
+    "blouse": "ivory",
+    "earrings": "temple",
+    "image": "looks/ruby__ivory__temple.webp"
+  },
+  {
+    "id": "navy__gold__jhumkas",
+    "saree": "navy",
+    "blouse": "gold",
+    "earrings": "jhumkas",
+    "image": "looks/navy__gold__jhumkas.webp"
+  },
+  {
+    "id": "navy__gold__pearl",
+    "saree": "navy",
+    "blouse": "gold",
+    "earrings": "pearl",
+    "image": "looks/navy__gold__pearl.webp"
+  },
+  {
+    "id": "navy__gold__temple",
+    "saree": "navy",
+    "blouse": "gold",
+    "earrings": "temple",
+    "image": "looks/navy__gold__temple.webp"
+  },
+  {
+    "id": "navy__emerald__jhumkas",
+    "saree": "navy",
+    "blouse": "emerald",
+    "earrings": "jhumkas",
+    "image": "looks/navy__emerald__jhumkas.webp"
+  },
+  {
+    "id": "navy__emerald__pearl",
+    "saree": "navy",
+    "blouse": "emerald",
+    "earrings": "pearl",
+    "image": "looks/navy__emerald__pearl.webp"
+  },
+  {
+    "id": "navy__emerald__temple",
+    "saree": "navy",
+    "blouse": "emerald",
+    "earrings": "temple",
+    "image": "looks/navy__emerald__temple.webp"
+  },
+  {
+    "id": "navy__ivory__jhumkas",
+    "saree": "navy",
+    "blouse": "ivory",
+    "earrings": "jhumkas",
+    "image": "looks/navy__ivory__jhumkas.webp"
+  },
+  {
+    "id": "navy__ivory__pearl",
+    "saree": "navy",
+    "blouse": "ivory",
+    "earrings": "pearl",
+    "image": "looks/navy__ivory__pearl.webp"
+  },
+  {
+    "id": "navy__ivory__temple",
+    "saree": "navy",
+    "blouse": "ivory",
+    "earrings": "temple",
+    "image": "looks/navy__ivory__temple.webp"
+  }
+]

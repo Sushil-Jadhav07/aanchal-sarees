@@ -1,0 +1,76 @@
+{
+  "sarees": [
+    {
+      "id": "emerald",
+      "name": "Emerald saree",
+      "price": 18500,
+      "thumbnail": "sarees/emerald.png"
+    },
+    {
+      "id": "magenta",
+      "name": "Magenta saree",
+      "price": 18500,
+      "thumbnail": "sarees/magenta.png"
+    },
+    {
+      "id": "mustard",
+      "name": "Mustard saree",
+      "price": 18500,
+      "thumbnail": "sarees/mustard.png"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby saree",
+      "price": 18500,
+      "thumbnail": "sarees/ruby.png"
+    },
+    {
+      "id": "navy",
+      "name": "Navy saree",
+      "price": 18500,
+      "thumbnail": "sarees/navy.png"
+    }
+  ],
+  "blouses": [
+    {
+      "id": "gold",
+      "name": "Gold silk blouse",
+      "price": 2800,
+      "thumbnail": "blouses/gold.png"
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald silk blouse",
+      "price": 2400,
+      "thumbnail": "blouses/emerald.png"
+    },
+    {
+      "id": "ivory",
+      "name": "Ivory silk blouse",
+      "price": 3200,
+      "thumbnail": "blouses/ivory.png"
+    }
+  ],
+  "earrings": [
+    {
+      "id": "jhumkas",
+      "name": "Jhumkas earrings",
+      "price": 1200,
+      "thumbnail": "jewellery/jhumkas.png"
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl earrings",
+      "price": 1500,
+      "thumbnail": "jewellery/pearl.png"
+    },
+    {
+      "id": "temple",
+      "name": "Temple earrings",
+      "price": 1800,
+      "thumbnail": "jewellery/temple.png"
+    }
+  ],
+  "currency": "INR",
+  "demo": true
+}

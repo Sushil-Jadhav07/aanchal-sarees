@@ -29,9 +29,26 @@ export function CartProvider({ children }) {
     },
     [notify],
   )
+  // several lines in one go (e.g. a complete look), with a single toast
+  const addMany = useCallback(
+    (newLines, message) => {
+      setLines((prev) =>
+        newLines.reduce((acc, line, n) => {
+          const i = acc.findIndex((l) => sameLine(l, line))
+          if (i >= 0) return acc.map((l, j) => (j === i ? { ...l, qty: l.qty + 1 } : l))
+          return [...acc, { ...line, qty: 1, key: `${line.productId}-${Date.now()}-${acc.length}-${n}` }]
+        }, prev),
+      )
+      notify(message)
+    },
+    [notify],
+  )
   const remove = useCallback((key) => setLines((prev) => prev.filter((l) => l.key !== key)), [])
   const count = lines.reduce((n, l) => n + l.qty, 0)
-  const value = useMemo(() => ({ lines, add, remove, count, open, setOpen }), [lines, add, remove, count, open])
+  const value = useMemo(
+    () => ({ lines, add, addMany, remove, count, open, setOpen }),
+    [lines, add, addMany, remove, count, open],
+  )
 
   return (
     <CartContext.Provider value={value}>

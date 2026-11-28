@@ -3,7 +3,7 @@ import Showroom from './components/sections/Showroom'
 import SilkOrbit from './components/sections/SilkOrbit'
 import MoodsExpanding from './components/sections/MoodsExpanding'
 import MoodsArches from './components/sections/MoodsArches'
-import SignatureDrape from './components/sections/SignatureDrape'
+import StylingStudio from './components/sections/StylingStudio'
 import WeavesStack from './components/sections/WeavesStack'
 import WeavesFan from './components/sections/WeavesFan'
 import Wardrobe from './components/sections/Wardrobe'
@@ -28,7 +28,7 @@ export default function App() {
           <SilkOrbit /> {/* 02  #silk-orbit */}
           <MoodsExpanding /> {/* 03  #moods */}
           <MoodsArches /> {/* 04  #moods-arches */}
-          <SignatureDrape /> {/* 05  #signature-drape */}
+          <StylingStudio /> {/* 05  #signature-drape: Styling Studio (replaces the old Signature Drape section) */}
           <WeavesStack /> {/* 06  #weaves */}
           <WeavesFan /> {/* 07  #weaves-fan */}
           <Wardrobe /> {/* 08  #wardrobe: "Your wardrobe, beautifully woven" */}

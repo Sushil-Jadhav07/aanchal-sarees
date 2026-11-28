@@ -1,0 +1,30 @@
+{
+  "image_count": 25,
+  "images": [
+    "backgrounds/ivory-room.png",
+    "blouses/emerald.png",
+    "blouses/gold.png",
+    "blouses/ivory.png",
+    "jewellery/jhumkas.png",
+    "jewellery/pearl.png",
+    "jewellery/temple.png",
+    "models/base-emerald-gold-jhumkas.png",
+    "models/blouse-emerald.png",
+    "models/blouse-ivory.png",
+    "models/earrings-pearl.png",
+    "models/earrings-temple.png",
+    "models/saree-magenta.png",
+    "models/saree-mustard.png",
+    "models/saree-navy.png",
+    "models/saree-ruby.png",
+    "references/blouse-tab.png",
+    "references/jewellery-tab.png",
+    "references/look-tab.png",
+    "references/saree-tab.png",
+    "sarees/emerald.png",
+    "sarees/magenta.png",
+    "sarees/mustard.png",
+    "sarees/navy.png",
+    "sarees/ruby.png"
+  ]
+}
